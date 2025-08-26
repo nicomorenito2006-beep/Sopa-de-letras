@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="t5_moreno" version="0.1.3">
+ <settings>
+  <title>t5_moreno</title>
+  <revision description="created" date="8/21/25" />
+  <descriptors />
+  <meta_langs>es</meta_langs>
+  <descriptions>
+   <description language="es" />
+  </descriptions>
+  <license type="by-nc-sa" url="https://creativecommons.org/licenses/by-nc-sa/4.0" />
+ </settings>
+ <sequence>
+  <item id="start" name="Sopa1" />
+ </sequence>
+ <activities>
+  <activity class="@textGrid.WordSearch" name="Sopa1" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Snap ITC" size="17" />
+      <color background="0x9999FF" />
+     </style>
+     <p>Encuentra los simbolos matemáticos</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Snap ITC" size="17" />
+      <color background="0x9999FF" />
+     </style>
+     <p>¡Muy bien!¡Sigue así!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x33FFFF">
+     <gradient source="0x00FFFF" dest="0x0033FF" angle="0" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+    <skin file="@blue.xml" />
+   </settings>
+   <textGrid rows="26" columns="15" cellWidth="40.0" cellHeight="50.0" border="true">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Calibri" size="17" />
+     <color foreground="0x00FFFF" background="0x0033CC" />
+    </style>
+    <text>
+     <row>******M******************P</row>
+     <row>*******U****************O*</row>
+     <row>**SUMA**L**************R**</row>
+     <row>*****T***T*D**********C***</row>
+     <row>*****S****I**********E****</row>
+     <row>*****E***V*P********N*****</row>
+     <row>*****R**I***L******T******</row>
+     <row>*******S*****I****A*******</row>
+     <row>******I*******C**J********</row>
+     <row>*****O*********AE*********</row>
+     <row>****N***********C*********</row>
+     <row>*****************IGUAL****</row>
+     <row>******************O*******</row>
+     <row>*******************N******</row>
+     <row>**************************</row>
+    </text>
+   </textGrid>
+   <clues>
+    <clue id="0">SUMA</clue>
+    <clue id="1">RESTA</clue>
+    <clue id="2">MULTIPLICACION</clue>
+    <clue id="3">DIVISION</clue>
+    <clue id="4">IGUAL</clue>
+    <clue id="5">PORCENTAJE</clue>
+   </clues>
+   <cells rows="2" cols="3" border="true" image="Simbolos.png" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="2" />
+   </cells>
+   <layout position="AB" />
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="Simbolos.png" file="simbolos.png" />
+ </mediaBag>
+</JClicProject>
+
